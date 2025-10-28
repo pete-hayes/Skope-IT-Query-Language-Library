@@ -1,1 +1,5 @@
+# Filter to User Alert policy events with user-entered justifications
+(justification_reason neq '' and justification_reason neq 'Notification timed out. Canceling the activity')
 
+# Filter to User Alert policy events with user-entered justifications, where the user clicked opted to proceed
+(justification_reason neq '' and justification_reason neq 'Notification timed out. Canceling the activity') and (action eq 'proceed')
