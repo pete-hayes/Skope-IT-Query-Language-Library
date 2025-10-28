@@ -1,2 +1,5 @@
 # Filter to SaaS app Share activity events sent to recipients outside the specified domain
 (activity eq 'Share' and to_user notlike '@example.com')
+
+# Filter to SaaS app login/logout events using an account outside the specified domain
+(from_user notlike 'example.com' and from_user neq '' and activity like 'Log')
