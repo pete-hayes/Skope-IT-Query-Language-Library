@@ -3,3 +3,6 @@
 
 # Filter to SaaS app login/logout events using an account outside the specified domain
 (activity in  ['Login Attempt','Login Failed','Login Successful','Logout'] and from_user neq '' and from_user notlike '@example.com')
+
+# Filter to SaaS app events where the user is located within the U.S., while using a Netskope Data Center located outside the U.S.
+(netskope_pop notlike 'US-' and netskope_pop neq '') and (src_country eq 'US')
