@@ -6,3 +6,7 @@
 
 # Filter to any Malware detection events (e.g., Netskope Threat Intelligence, AV, Cloud Sandbox, or Advanced Heuristic Analysis)
 detection_engine neq ''
+
+# Filter to events where a user fell below the User Confidence Index (UCI) threshold
+# UCI threshold configured within Incidents > Behavior Analytics > Global UCI Alert
+(alert_name eq 'UCI threshold alert')
