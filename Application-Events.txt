@@ -2,4 +2,4 @@
 (activity eq 'Share' and to_user notlike '@example.com')
 
 # Filter to SaaS app login/logout events using an account outside the specified domain
-(from_user notlike 'example.com' and from_user neq '' and activity like 'Log')
+(activity like 'Log' and from_user neq '' and from_user notlike 'example.com')
