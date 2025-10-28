@@ -7,7 +7,6 @@ Netskope supports a custom query language in Skope IT reporting, available throu
 Each text file corresponds to the applicable area within Skope IT:
 - `Application-Events.txt`
 - `Page-Events.txt`
-- `Endpoint-Events.txt`
 - `Network-Events.txt`
 - `Alerts.txt` 
 
