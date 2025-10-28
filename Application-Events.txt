@@ -9,3 +9,9 @@
 
 # Filter to events involving password-protected PDF files
 (file_password_protected eq 'yes' and file_type like 'PDF')
+
+# Filter to file upload events to unsanctioned SaaS app instances using accounts outside the specified domain
+(instance_tags in ['Unsanctioned','Untagged'] and activity eq 'Upload' and from_user notlike '@example.com')
+
+# Filter to file upload events to unsanctioned SaaS apps using accounts outside the specified domain
+(app-cci-app-tag eq 'Unsanctioned' and activity eq 'Upload' and from_user notlike '@example.com')
