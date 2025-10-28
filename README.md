@@ -1,2 +1,2 @@
 # Skope-IT-Query-Language-Library
-A library of example queries for Netskope's Skope IT reporting engine.
+A library of example custom queries for Netskope's Skope IT reporting engine.
