@@ -1,1 +1,2 @@
-
+# Filter to HTTPS events that were not decrypted due to a policy-based SSL Decryption bypass
+(bypass_traffic eq 'yes' and ssl_decrypt_policy eq 'yes')
