@@ -1,2 +1,20 @@
 # Skope-IT-Query-Language-Library
 A library of example custom queries for Netskope's Skope IT reporting engine.
+
+# Usage
+Netskope supports a custom query language in Skope IT reporting, available through the filter icon <img width="22" height="22" alt="Filter icon" src="https://github.com/user-attachments/assets/3a1cf835-19ff-4e9e-8718-c81be26db723" /> in each Skope IT area.
+
+Each text file corresponds to the applicable area within Skope IT:
+- `Application-Events.txt`
+- `Page-Events.txt`
+- `Endpoint-Events.txt`
+- `Network-Events.txt`
+- `Alerts.txt` 
+
+See https://docs.netskope.com/en/skope-it-query-language for more information.
+
+## License
+Licensed under MIT — free to use, modify, and share, with no warranty.
+
+## Disclaimer
+This project is **not affiliated with or supported by Netskope**. It may be incomplete, outdated, or inaccurate. Use at your own risk.
