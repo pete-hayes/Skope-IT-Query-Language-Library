@@ -1,1 +1,2 @@
-
+# Filter to SaaS app Share activity events sent to recipients outside the specified domain
+(activity eq 'Share' and to_user notlike '@example.com')
