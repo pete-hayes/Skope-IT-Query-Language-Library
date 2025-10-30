@@ -15,3 +15,6 @@
 
 # Filter to file upload events to unsanctioned SaaS apps using accounts outside the specified domain
 (app-cci-app-tag eq 'Unsanctioned' and activity eq 'Upload' and from_user notlike '@example.com')
+
+# Filter to file upload events with a file size of 25MB or greater
+(activity in ['Upload']) and (file_size gte '26214400') 
