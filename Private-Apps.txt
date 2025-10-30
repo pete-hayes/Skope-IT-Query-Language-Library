@@ -1,0 +1,2 @@
+# Filter to Private App application traffic where any portion of the user's connection was routed through a non-U.S. Netskope data center
+(traffic_type in ['PrivateApp']) and (publisher_pop notlike 'US-') or (netskope_pop notlike 'US-')
