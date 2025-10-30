@@ -1,2 +1,5 @@
 # Filter to websites that weren't decrypted due to a policy-based SSL Decryption bypass
 (bypass_traffic eq 'yes' and ssl_decrypt_policy eq 'yes')
+
+# Filter to websites that weren't decrypted due to SSL/TLS certificate validation errors or bypassed from traffic steering to Netskope
+(bypass_traffic eq 'yes' and ssl_decrypt_policy eq 'no')
