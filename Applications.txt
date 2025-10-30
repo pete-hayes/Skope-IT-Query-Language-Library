@@ -1,0 +1,2 @@
+# Filter to accessed SaaS applications with a publicly reported security breach within the past year
+(app-cci-recent-breach eq 'Yes')
