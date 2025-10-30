@@ -1,2 +1,5 @@
 # Filter to Private App Access events where any portion of the user's connection was routed through a non-U.S. Netskope data center
 (traffic_type in ['PrivateApp']) and (publisher_pop notlike 'US-') or (netskope_pop notlike 'US-')
+
+# Filter to Private App Access events for Remote Desktop traffic
+(protocol_port eq 'TCP:3389' or protocol_port eq 'UDP:3389')
