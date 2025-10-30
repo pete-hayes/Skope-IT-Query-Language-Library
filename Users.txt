@@ -1,0 +1,2 @@
+# Filter to users where their traffic originated within the U.S., while using a Netskope Data Center located outside the U.S.
+(src_country eq 'US' and netskope_pop notlike 'US-')
