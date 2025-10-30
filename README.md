@@ -8,9 +8,12 @@ Each text file corresponds to the applicable area within Skope IT:
 - `Application-Events.txt`
 - `Page-Events.txt`
 - `Network-Events.txt`
-- `Alerts.txt` 
+- `Alerts.txt`
 
-See https://docs.netskope.com/en/skope-it-query-language for more information.
+See Netskope's Skope IT documentation for more information:
+- [Overview and Supported Operators](https://docs.netskope.com/en/skope-it-query-language)
+- [Query Language Search Examples](https://docs.netskope.com/en/skope-it-query-language-search-examples)
+- [Query Parameter Examples](https://docs.netskope.com/en/skope-it-queries-library)
 
 ## License
 Licensed under MIT — free to use, modify, and share, with no warranty.
