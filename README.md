@@ -8,6 +8,7 @@ As the available query parameters vary, each text file corresponds to the applic
 - `Applications.txt`
 - `Private-Apps.txt`
 - `Websites.txt`
+- `Users.txt`
 - `Application-Events.txt`
 - `Page-Events.txt`
 - `Network-Events.txt`
