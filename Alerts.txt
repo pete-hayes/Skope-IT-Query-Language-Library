@@ -22,3 +22,6 @@
 
 # Filter to DLP events triggered by high or critical severity DLP rules
 (dlp_rule_severity in ['High','Critical'])
+
+# Filter to Bulk Upload/Download UEBA events
+(alert_type in ['uba']) and (policy in ['Bulk Delete','Bulk Upload'])
