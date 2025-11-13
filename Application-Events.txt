@@ -18,3 +18,6 @@
 
 # Filter to file upload events with a file size of 25MB or greater
 (activity in ['Upload']) and (file_size gte '26214400') 
+
+# Filter to file movement events with an applied Microsoft data classification/sensitivity label
+(data_classification_label neq '')
