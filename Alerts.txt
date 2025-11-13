@@ -25,3 +25,6 @@
 
 # Filter to Bulk Upload/Download UEBA events
 (alert_type in ['uba']) and (policy in ['Bulk Delete','Bulk Upload'])
+
+# Filter to file movement events with an applied Microsoft data classification/sensitivity label
+(data_classification_label neq '')
