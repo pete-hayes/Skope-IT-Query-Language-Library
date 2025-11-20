@@ -3,3 +3,6 @@
 
 # Filter to Private App Access events for Remote Desktop traffic
 (protocol_port eq 'TCP:3389' or protocol_port eq 'UDP:3389')
+
+# Filter to DNS events, excluding traffic for Netskope services (e.g., Administrator Portal, Netskope Client, Digital Experience Management, etc.)
+(app eq 'Domain Name Service (DNS)') and (qdomain notlike 'goskope.com')
