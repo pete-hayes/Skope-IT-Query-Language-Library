@@ -31,3 +31,6 @@
 
 # Filter to DNS events for destinations in the Security Risk categories
 (app eq 'Domain Name Service (DNS)') and (category like 'Security Risk')
+
+# Filter to Compromised Credential events concerning only the specified domain
+(alert_type in ['Compromised Credential']) and (matched_username like 'example.com')
