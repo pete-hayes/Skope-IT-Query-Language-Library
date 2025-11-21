@@ -28,3 +28,6 @@
 
 # Filter to file movement events with an applied Microsoft data classification/sensitivity label
 (data_classification_label neq '')
+
+# Filter to DNS events for destinations in the Security Risk categories
+(app eq 'Domain Name Service (DNS)') and (category like 'Security Risk')
