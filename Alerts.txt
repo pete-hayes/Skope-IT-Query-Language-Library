@@ -26,7 +26,7 @@
 # Filter to Bulk Upload/Download UEBA events
 (alert_type in ['uba']) and (policy in ['Bulk Delete','Bulk Upload'])
 
-# Filter to file movement events with an applied Microsoft data classification/sensitivity label
+# Filter to data-at-rest (Google or Microsoft) or file movement (Microsoft) events with an applied data classification/sensitivity label
 (data_classification_label neq '')
 
 # Filter to DNS events for destinations in the Security Risk categories
